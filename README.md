@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blueprint Base
+
+Blueprint Base is the production-ready engineering foundation for every HubZero Blueprint.
+
+It is not a finished website, application, or template.
+
+Its purpose is to provide a consistent engineering baseline so new blueprints can focus on architecture, design, and product-specific functionality instead of repeatedly solving the same engineering problems.
+
+## What belongs here
+
+* Project structure
+* Global application layout
+* Design tokens
+* Theme configuration
+* Shared UI primitives
+* Utilities
+* Common providers
+* Engineering conventions
+
+## What does not belong here
+
+* Business-specific features
+* Industry-specific functionality
+* Branding
+* Marketing content
+* Sample pages
+* Client assets
+
+Those belong in individual blueprints.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Initialize the blueprint:
+
+```bash
+npx hz init
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Philosophy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Blueprint Base standardizes engineering.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+It does not standardize creativity.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Every HubZero blueprint should inherit a consistent engineering foundation while remaining free to develop its own architecture, identity, and design language.
