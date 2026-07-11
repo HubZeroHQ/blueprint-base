@@ -8,6 +8,8 @@ It is about ensuring the final result reflects HubZero's engineering standards, 
 
 Never assume that working software is finished software.
 
+This document covers Engineering Review — is the implementation correct, maintainable, and complete? A separate pass, Design Review, asks whether the result is worth showing a client. See `.hubzero/agents/design-review.md`. Apply `.hubzero/principles.md` throughout this review.
+
 ---
 
 # Review the Problem
@@ -149,6 +151,31 @@ If something can be meaningfully improved without introducing unnecessary comple
 Do not stop at "good enough."
 
 Pursue thoughtful refinement.
+
+---
+
+# Review Outcome
+
+A successful review does not automatically mean the implementation is complete.
+
+Once engineering review findings have been addressed, the implementation must proceed to Design Review (`.hubzero/agents/design-review.md`) before the HubZero release process.
+
+Execute the canonical release workflow defined in:
+
+`.hubzero/release/RELEASE_CHECKLIST.md`
+
+Every applicable verification item must pass before the implementation may be considered production-ready.
+
+If any verification fails:
+
+* Identify the root cause.
+* Correct the implementation.
+* Repeat verification.
+* Continue until all applicable requirements have been satisfied.
+
+The release checklist is the final quality gate for every HubZero Blueprint.
+
+Do not approve an implementation that has not successfully completed the release process.
 
 ---
 
