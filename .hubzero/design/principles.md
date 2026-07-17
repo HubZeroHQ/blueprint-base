@@ -76,7 +76,7 @@ Every page should naturally lead into the next.
 
 Navigation, content, interactions, and layout should work together to guide users through a clear journey.
 
-Think about the complete experience rather than isolated screens.
+Think about the complete experience rather than isolated screens. See `.hubzero/architecture/principles.md` — Complete User Journeys for concrete per-architecture journey examples.
 
 ---
 
@@ -106,9 +106,9 @@ Aim for clarity rather than emptiness.
 
 Animation should communicate.
 
-It should explain relationships, provide feedback, reduce cognitive load, and create continuity between interactions.
+Motion exists to express hierarchy, feedback, state, progression, and focus — what changed, what is happening, or what deserves attention right now. It should explain relationships, reduce cognitive load, and create continuity between interactions.
 
-Motion should never distract from content.
+Motion should never exist purely for decoration, and it should never distract from content.
 
 ---
 

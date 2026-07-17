@@ -55,6 +55,7 @@ Confirm the blueprint would survive being shown to a prospective client without 
 * Brand assets (logo, favicon, brand mark, Open Graph image, apple touch icons, light/dark variants) exist and are wired into metadata, navigation, and footer — not just generated and left unused.
 * Photography is cohesive across the site and consistent with the active Design Language's Photography Language.
 * The fictional company and its content are internally consistent (name, industry, tone, imagery all agree with each other).
+* Written content — pricing, FAQs, legal pages, company history, support content — reads as production-ready rather than filler. See `.hubzero/experience/content.md`.
 * No temporary generation scripts, one-off tooling, or scratch files remain in the repository.
 
 Full standard: `.hubzero/experience/EXPERIENCE_STANDARD.md`.

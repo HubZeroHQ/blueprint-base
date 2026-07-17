@@ -2,9 +2,17 @@
 
 Every blueprint should generate a complete, believable fictional brand rather than shipping with a generic placeholder name and a default logo.
 
+A generated brand should be:
+
+* **Believable** — the kind of name and identity a real company would actually adopt, not a name that announces itself as a placeholder.
+* **Legally distinct** — original, with no resemblance to real, existing brands, logos, or trademarks.
+* **Timeless** — free of naming or visual trends that will date the blueprint within a year or two.
+* **Commercially realistic** — consistent with how a company in the selected Architecture category would actually present itself.
+* **Consistent across metadata and assets** — the same name, tone, and mark appear everywhere the brand surfaces, from the logo to the page `<title>`.
+
 Brand Generation happens after the Architecture and Design Language have been selected and after implementation is structurally complete. It never happens during implementation, and it never happens before Architecture and Design Language are known — a brand generated first has nothing to be consistent with.
 
-Brand Generation happens before Photography Generation (`photography.md`). Photography should reflect the brand, not the other way around.
+Brand Generation happens before Content Generation (`content.md`) and Photography Generation (`photography.md`). Content and photography should reflect the brand, not the other way around.
 
 ---
 
