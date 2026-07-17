@@ -22,7 +22,18 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+
+# editor state
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# AI tooling / agent worktrees and scratch artifacts
+.claude/worktrees/
+.claude/jobs/
+.claude/settings.local.json
 
 # debug
 npm-debug.log*
