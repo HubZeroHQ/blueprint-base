@@ -83,6 +83,7 @@ Verify consistency across the entire blueprint.
 - [ ] Cards
 - [ ] Forms
 - [ ] Navigation
+- [ ] Active navigation state
 - [ ] Footer
 - [ ] Responsive behavior
 - [ ] Motion consistency
@@ -118,9 +119,14 @@ Verify all placeholder content.
 - [ ] Fictional testimonials.
 - [ ] Fictional blog articles.
 - [ ] Fictional contact information.
+- [ ] Fictional pricing.
+- [ ] Fictional FAQs.
+- [ ] Fictional legal pages (privacy, terms).
+- [ ] Fictional company history.
+- [ ] Fictional support content.
 - [ ] Placeholder content clearly documented.
 
-No placeholder should be easily mistaken for a real organization.
+No placeholder should be easily mistaken for a real organization. See `.hubzero/experience/content.md` for content generation standards.
 
 ---
 
@@ -174,7 +180,9 @@ Reuse Blueprint Base infrastructure.
 
 # 10. Pages
 
-Verify every required page.
+Verify every page required by the selected Architecture category's complete user journey (see `.hubzero/architecture/principles.md`).
+
+The list below is the common baseline for Corporate and Services-style blueprints. Other architecture categories replace it with their own required pages — an SaaS blueprint verifies Pricing and Dashboard rather than Work and Careers, for example.
 
 - [ ] Home
 - [ ] About
@@ -204,6 +212,9 @@ Verify every route.
 - [ ] No runtime exceptions.
 - [ ] Dynamic routes function correctly.
 - [ ] Navigation works.
+- [ ] Active navigation state reflects the current route.
+- [ ] No unintended horizontal overflow at any viewport width.
+- [ ] Verified in multiple browsers.
 - [ ] Images load correctly.
 
 ---

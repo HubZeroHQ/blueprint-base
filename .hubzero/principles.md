@@ -108,6 +108,16 @@ Relatedly, be deliberate about stacking context. `transform`, `filter`, and `bac
 
 ---
 
+# Predictable Client/Server Rendering
+
+A recurring engineering failure across HubZero blueprints is content that differs between the server-rendered markup and the client's first render — a timestamp formatted differently, a value read from `localStorage` or `window` before the client has mounted, a random or generated ID that differs between the two renders, or content that depends on the visitor's timezone or locale-dependent formatting.
+
+The first client render must produce markup that matches what the server produced. Anything that can only be known on the client — device APIs, stored preferences, locale, viewport size — belongs in a state update that runs after mount, not in the value used for the initial render. This is a property of correct implementation, not a runtime warning to patch afterward.
+
+This principle is framework-agnostic. Every modern framework that renders on the server and hands off to the client is susceptible to the same failure mode, and the fix is the same regardless of which framework is in use.
+
+---
+
 # Finish Completely
 
 An implementation is not finished because it behaves correctly under ideal conditions.
