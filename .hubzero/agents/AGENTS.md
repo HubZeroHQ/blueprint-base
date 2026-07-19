@@ -113,6 +113,7 @@ When contributing to a HubZero Blueprint:
 * Preserve the blueprint's design language.
 * Build maintainable solutions.
 * Improve quality where appropriate.
+* Be honest about what the implementation can and cannot do — see `.hubzero/principles.md` — Honest Demonstration Over Simulated Functionality.
 
 Do not introduce unnecessary complexity.
 

@@ -5,11 +5,14 @@ You are assisting with the creation of a new HubZero focused blueprint.
 This blueprint extends Blueprint Base and must follow Blueprint Core exactly.
 
 You are not designing a one-off website.
-You are building a reusable production-quality reference implementation that validates the HubZero platform.
+
+You are building a reusable, production-quality reference implementation that validates the HubZero platform.
+
+Your objective is to create what should become the canonical HubZero implementation for the chosen architecture and design language.
 
 ---
 
-## Step 1 — Choose the Blueprint
+# Step 1 — Choose the Blueprint
 
 Ask me for:
 
@@ -56,44 +59,44 @@ Available Design Languages:
 - retro
 - brutalist
 
-The repository must follow:
+Repository naming:
 
+```
 blueprint-{architecture}-{design}
+```
 
 Example:
 
+```
 blueprint-saas-technical
+```
 
 ---
 
-## Step 2 — Generate a Fictional Company
+# Step 2 — Generate a Fictional Company
 
-Generate 5 believable fictional companies appropriate for the chosen architecture.
+Generate five original fictional companies appropriate for the chosen architecture.
 
 Requirements:
 
-- unique
-- professional
-- globally believable
-- not obviously copied
+- believable
+- globally usable
 - trademark-safe
-- reusable
+- professional
+- memorable
+- not obviously inspired by an existing company
 
-Do not use placeholder names like:
+Do not use placeholder names.
 
-- Acme
-- Example Corp
-- Demo Inc
-
-Wait for me to choose one.
+Wait for me to choose one before continuing.
 
 ---
 
-## Step 3 — Repository Creation
+# Step 3 — Repository Creation
 
-Tell me to create a new GitHub repository under the HubZeroHQ organization.
+Tell me to create a new repository under the HubZeroHQ organization.
 
-Then instruct me to clone Blueprint Base:
+Then instruct me to initialize it from Blueprint Base:
 
 ```bash
 mkdir blueprint-{architecture}-{design}
@@ -107,23 +110,23 @@ git remote add origin https://github.com/HubZeroHQ/blueprint-{architecture}-{des
 git push -u origin main
 ```
 
-Never rename the original remote.
+Always remove Blueprint Base as the remote.
 
-Always remove it first.
+Never rename it.
 
 ---
 
-## Step 4 — Synchronize Blueprint Core
+# Step 4 — Synchronize Blueprint Core
 
-Before implementation begins, instruct me to run:
+Before implementation:
+
+Run:
 
 ```bash
 npm install
 ```
 
-This updates `.hubzero` to the latest Blueprint Core through the prepare script.
-
-Then verify:
+Verify:
 
 ```bash
 type .hubzero/VERSION
@@ -131,50 +134,61 @@ type .hubzero/VERSION
 
 (or `cat .hubzero/VERSION` on macOS/Linux)
 
-If the version is not the latest available, stop and resolve it before implementation.
+Confirm the installed Blueprint Core matches the latest version.
 
 Never begin implementation using an outdated Blueprint Core.
 
 ---
 
-## Step 5 — Generate the Claude Code Prompt
+# Step 5 — Generate the Claude Code Prompt
 
-Generate one complete prompt for Claude Code.
+Generate one complete implementation prompt.
 
-The prompt should instruct Claude to:
+Output only the implementation prompt.
 
-### Planning
+Do not implement anything yourself.
+
+The implementation prompt must instruct Claude Code to follow the complete HubZero lifecycle.
+
+---
+
+# Planning
+
+Claude must:
 
 - Read Blueprint Core completely.
 - Understand the selected architecture.
 - Study the selected Design Language.
-- Inspect Blueprint Base before modifying anything.
+- Inspect Blueprint Base before making changes.
 - Reuse existing infrastructure.
 - Never duplicate existing primitives.
 
 ---
 
-### Architecture
+# Architecture
 
 Follow Blueprint Core exactly.
 
-Do not invent your own architecture.
+Do not invent alternative architecture patterns.
 
-Respect:
+Respect every applicable section of Blueprint Core, including:
 
 - principles
 - architecture guidance
-- design philosophy
-- experience standards
+- design guidance
 - branding guidance
 - content guidance
+- experience standards
+- AI guidance
 - release checklist
 
 ---
 
-### Branding
+# Branding
 
-Generate an original fictional brand including:
+Create a complete fictional brand.
+
+Generate:
 
 - company name
 - positioning
@@ -182,54 +196,109 @@ Generate an original fictional brand including:
 - logo
 - favicon
 - Open Graph image
-- social preview
+- social preview assets
 - placeholder photography
 
-All assets must look production-ready.
+Open Graph images should follow Blueprint Core guidance for maximum platform compatibility.
 
 ---
 
-### Content
+# Fictional Content
 
-Generate realistic content appropriate for the chosen architecture.
+Follow Blueprint Core's Fictional Content Policy.
+
+Generate believable but entirely fictional:
+
+- addresses
+- phone numbers
+- email addresses
+- employees
+- testimonials
+- customers
+- products
+- case studies
+- office locations
+
+Never scrape or copy identifying information from real organizations.
+
+Never reuse real contact information.
+
+---
+
+# Demonstration Transparency
+
+Follow Blueprint Core's Honest Demonstration principle.
+
+Do not simulate production systems.
+
+Prefer honest static implementations over fake dynamic behaviour.
+
+If functionality is intentionally static, communicate that honestly.
+
+Never fake:
+
+- persistence
+- authentication
+- payment
+- backend processing
+- stored submissions
+
+---
+
+# Content
+
+Generate realistic content appropriate for the architecture.
 
 Never use:
 
 - Lorem Ipsum
-- Placeholder paragraphs
-- Generic testimonials
-- Fake metrics without context
+- placeholder paragraphs
+- generic testimonials
+- meaningless metrics
 
-Content should support believable user journeys.
+Maintain editorial consistency throughout the entire website.
+
+Be consistent with:
+
+- locale
+- spelling
+- punctuation
+- capitalization
+- terminology
+- dates
+- currencies
+- measurements
+- address formatting
+- phone formatting
 
 ---
 
-### Implementation
+# Implementation
 
 Reuse Blueprint Base wherever possible.
 
-Only create new infrastructure when absolutely necessary.
+Only introduce new infrastructure when absolutely necessary.
 
-Prefer extending existing primitives over introducing new ones.
+Prefer extending existing primitives over creating new ones.
 
 Maintain:
 
 - SSR safety
 - hydration safety
 - accessibility
-- responsive behavior
-- reduced motion support
+- responsive behaviour
 - semantic HTML
+- reduced-motion compatibility
 
 ---
 
-### Design
+# Design
 
 Implement the chosen Design Language faithfully.
 
 Do not mix visual languages.
 
-Ensure consistency across:
+Maintain consistency across:
 
 - typography
 - spacing
@@ -237,13 +306,17 @@ Ensure consistency across:
 - borders
 - corner language
 - interaction language
-- motion
+- motion language
 - photography
-- rhythm
+- visual rhythm
+
+Remember that motion is part of the Design Language.
+
+Some design languages intentionally use minimal or zero animation.
 
 ---
 
-### Mobile Experience
+# Mobile Experience
 
 Treat mobile as a first-class experience.
 
@@ -260,7 +333,7 @@ Optimize:
 
 ---
 
-### Experience Generation
+# Experience Generation
 
 Complete every experience pass before release.
 
@@ -270,45 +343,49 @@ This includes:
 - photography
 - empty states
 - hover states
-- transitions
 - loading states
+- transitions (where appropriate)
 - visual polish
+- one memorable, architecture-appropriate signature experience
 
 ---
 
-### Engineering Review
+# Engineering Review
 
-Review all code for:
+Review the implementation for:
 
 - maintainability
 - duplication
 - architecture
 - accessibility
 - performance
+- SSR safety
+- hydration safety
 
-Refactor where necessary.
+Refactor where appropriate.
 
 ---
 
-### Design Review
+# Design Review
 
-Review the complete visual system.
+Review the complete experience.
 
-Ensure:
+Verify:
 
 - consistency
+- hierarchy
 - balance
 - rhythm
-- hierarchy
-- responsiveness
+- editorial consistency
+- responsive quality
+- fictional content compliance
+- HubZero attribution
 
 ---
 
-### Release Verification
+# Release Verification
 
-Before completion:
-
-Run:
+Before completion run:
 
 - lint
 - typecheck
@@ -324,21 +401,31 @@ Verify:
 - active navigation state
 - no hydration issues
 - no horizontal overflow
-- responsive behavior
+- responsive behaviour
 - accessibility
 - SEO
+- browser console
+- first load
+- client-side navigation
+- hydration after navigation
+- Open Graph compatibility
+- lifecycle routes
+- empty states
+- HubZero attribution
+- fictional content compliance
 
 ---
 
-### Completion
+# Completion
 
 Do not stop after implementation.
 
-Only finish when the blueprint feels production-ready and could serve as the canonical HubZero implementation for its architecture.
+Only finish when:
 
-Remove any temporary scripts created during generation.
+- the blueprint is production-ready
+- the blueprint fully complies with Blueprint Core
+- the blueprint could become the canonical HubZero implementation for its architecture
 
----
+Remove temporary generation scripts before finishing.
 
-Output only the final Claude Code prompt.
-Do not generate any implementation yourself.
+Return only when all phases are complete.

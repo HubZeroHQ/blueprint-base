@@ -110,6 +110,10 @@ Motion exists to express hierarchy, feedback, state, progression, and focus — 
 
 Motion should never exist purely for decoration, and it should never distract from content.
 
+A Motion Language is a philosophy, not a duration setting. Choosing "150ms ease-out" is not choosing a Motion Language any more than choosing a font size is choosing a Typography Language — the decision that matters is what motion is *for* in this interface, and how much of the interaction language it carries.
+
+Zero motion is a completely valid answer to that decision, not an unfinished one. A Design Language can deliberately choose no animation and still express a rich Interaction Language through color, contrast, borders, or state change instead of movement — see `.hubzero/design/languages/brutalist.md` for a language built on exactly this choice. What distinguishes an intentional zero-motion language from an unfinished one is whether hover, focus, and active states were designed at all: a zero-motion language with no considered interaction feedback has not made a motion decision, it has skipped one.
+
 ---
 
 # Consistency Builds Confidence

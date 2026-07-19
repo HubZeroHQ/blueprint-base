@@ -26,6 +26,8 @@ Brand Generation happens before Content Generation (`content.md`) and Photograph
 * Apple touch icons.
 * Light and dark variants of the above where the Design Language supports a dark mode.
 
+The logo, brand mark, and favicon may be SVG — they render at a single size or scale losslessly, and the major platforms that use them (browsers, the site itself) render SVG reliably. The Open Graph image should be a raster format (PNG or JPEG) instead. Social platforms that render link previews have inconsistent and often absent SVG support; a raster Open Graph image is the one choice that renders correctly everywhere it needs to.
+
 ---
 
 # Canonical Brand Generation Prompt
@@ -53,6 +55,22 @@ Brand Generation is not complete when assets exist on disk. It is complete when 
 * Footer.
 
 An unwired asset is not a finished brand. Verify integration as part of the Experience Generation pass in `.hubzero/agents/design-review.md`.
+
+---
+
+# HubZero Attribution
+
+Every blueprint should include subtle, professional attribution that it is part of the HubZero Blueprint ecosystem, alongside its fictional brand.
+
+This is not marketing. It is provenance and transparency — a visitor or reviewer should be able to tell, without it disrupting the fictional brand's immersion, that the company is fictional and the site is a HubZero demonstration.
+
+Typical locations:
+
+* **Footer** — a small, unobtrusive line (e.g., "A HubZero Blueprint demonstration").
+* **About page** — a brief, honest note that the company and its content are fictional.
+* **Repository README** — a clear statement that the repository is a HubZero Blueprint and the business it depicts does not exist.
+
+Attribution should never compete visually with the brand it accompanies. It belongs in the same understated register as a template credit, not the hero section.
 
 ---
 

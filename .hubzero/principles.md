@@ -80,6 +80,8 @@ Accessibility is not a review-stage checklist item. It is a property of correct 
 
 Semantic HTML, keyboard navigation, focus management, and sufficient contrast should exist because the implementation was built correctly, not because they were added afterward.
 
+This extends to every route a framework generates on a project's behalf, not only the routes explicitly built — loading states, error boundaries, and not-found pages. A loading state needs an accessible live region, not just a visual spinner. An error boundary needs a heading hierarchy and keyboard-reachable recovery action, not just a caught exception. These routes are reached by real visitors and deserve the same rigor as any page that was hand-built.
+
 ---
 
 # SEO as Engineering
@@ -118,11 +120,21 @@ This principle is framework-agnostic. Every modern framework that renders on the
 
 ---
 
+# Honest Demonstration Over Simulated Functionality
+
+Every HubZero blueprint is a reference implementation of a fictional company, not a live product with a real backend. A recurring failure is dressing up that gap instead of being honest about it — a contact form that silently discards what it collects, a login screen that accepts any input, a dashboard populated with numbers that reset on refresh.
+
+When functionality would require a backend the blueprint does not have, say so rather than simulating it: a `mailto:` link instead of a form handler with nowhere to send its data, an honestly labeled limitation instead of fake persistence. A believable static experience is more trustworthy than a dynamic-looking one that breaks the moment a visitor tests it.
+
+This governs implementation choices the same way it governs generated content and photography — see `.hubzero/experience/content.md`.
+
+---
+
 # Finish Completely
 
 An implementation is not finished because it behaves correctly under ideal conditions.
 
-Before considering work complete, verify edge cases, empty states, and error states, and confirm existing functionality still works.
+Before considering work complete, verify edge cases, empty states, and error states, and confirm existing functionality still works. Empty states deserve particular attention anywhere filtering, searching, or any other user-driven narrowing of a result set can legitimately return zero matches — a filtered list that quietly renders nothing is not finished, whether or not the happy path was ever tested.
 
 ---
 
